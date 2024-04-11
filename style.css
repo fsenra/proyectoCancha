@@ -14,15 +14,26 @@ nav { display: flex;
     justify-content: space-between;
     flex-wrap: wrap;}
 button{
-    margin-top: 5px;
-    font-size: 10em;
     border: none;
     background-color: white;
-    color:green;
-    padding:5px;
-    cursor:pointer;
-    font-family:"Tac One", sans-serif;
+    color: green;
+    cursor: pointer;
+    font-family: "Tac One", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+    will-change: transform;
 }
+
+button:hover {
+    color: #fff;
+    background-color: green;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
     h1{
    
         font-size: 6vw;
@@ -150,3 +161,10 @@ button{
         font-size: 5vh;
     }
  }
+
+
+
+
+
+
+

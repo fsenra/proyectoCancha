@@ -1,19 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: azure;
 }
 
-nav { display: flex;
+/* Font Families */
+
+.inconsolata {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.tac-one-regular {
+    font-family: "Tac One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* End Font Families's block */
+
+
+nav {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;}
-button{
+    flex-wrap: wrap;
+}
+
+button {
     border: none;
     background-color: white;
     color: green;
@@ -33,70 +56,57 @@ button:hover {
     background-color: green;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
-  }
-    h1{
-   
-        font-size: 6vw;
-       
-        font-family: "Tac One", sans-serif;
-        color: white;
-        text-shadow:  10px 5px 10px black;
-    }
-    h2{
-        
-        font-size: 2vw;
-        font-family: "Tac One", sans-serif;
-        color: white;
-     
-    }
-    
-    
-    ul{
-        list-style-type: none;  
-        margin-top: 3vh;
-        padding: 30px;
-        display: flex;
-        align-content: center;
-        justify-content: flex-end;
-        flex-wrap: wrap;}
-    
-    li{
-        font-size: 22px;
-        font-weight: bold;
-        align-items: center;
-    }    
-    
-    a{
-        display: inline-flex;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: black;
-        padding: 10px;
-    }
-    
-    a:hover{
-        color: green;
-    }
-
-.inconsolata{
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
-.tac-one-regular {
+h1 {
+
+    font-size: 6vw;
+
     font-family: "Tac One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+    color: white;
+    text-shadow: 10px 5px 10px black;
+}
+
+h2 {
+
+    font-size: 2vw;
+    font-family: "Tac One", sans-serif;
+    color: white;
+
+}
 
 
+ul {
+    list-style-type: none;
+    margin-top: 3vh;
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
+li {
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+}
 
-.banner{
+a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+a:hover {
+    color: green;
+}
+
+.banner {
     background-image: url(./img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,61 +120,73 @@ button:hover {
     justify-content: center;
 }
 
-.container-logo{
-    width:16vh;
+.container-logo {
+    width: 16vh;
     height: 13vh;
     margin-bottom: 10px;
     margin-left: 10px;
 }
 
-.container-logo img{
+.container-logo img {
     width: 13vh
 }
 
 
-#login{
+#login {
     border: 1px solid green;
     padding: 10px 30px;
     color: black;
     margin: 0 20px;
+    transition: all 0.5s ease-in-out;
 }
 
-#login:hover{
+#login:hover {
     color: white;
     background-color: green;
 }
 
-
-
-
 /* media queries*/
 
-@media all and (max-width: 600px)  {
-    h1{
+@media all and (max-width: 600px) {
+    h1 {
         font-size: 6vh
     }
-   
-    h2{
+
+    h2 {
         font-size: 4vh;
     }
-   
-    
-  }
 
-  
-  @media (min-width: 601px) and (max-width: 900px){
-    h1{
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
         font-size: 8vh
     }
-   
-    h2{
+
+    h2 {
         font-size: 5vh;
     }
- }
+}
 
 
+/* Animaciones @keyframes */
 
-
-
-
-
+@keyframes changeColor {
+    10%{
+        background-color: aquamarine;
+    }
+    30%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: lightgreen;
+    }
+    70%{
+        background-color: green;
+    }    
+    100%{
+        background-color: darkgreen;
+    }
+}

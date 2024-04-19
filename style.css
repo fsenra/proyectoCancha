@@ -1,3 +1,17 @@
+/* Declaración de variables */
+:root{
+    --first-color: green;
+    --second-color: white;
+    --third-color: black;
+    --link-color: black;
+    --shadow-color: black;
+    --bg-color-first: lightgray;
+    --bg-color-second: white; 
+    --bg-color-hover: green;
+    --color-font-hover: white;
+    --color-link-hover: green;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +20,7 @@
 }
 
 body {
-    background-color: azure;
+    background-color: var(--bg-color-first);
 }
 
 /* Font Families */
@@ -38,8 +52,8 @@ nav {
 
 button {
     border: none;
-    background-color: white;
-    color: green;
+    background-color: var(--bg-color-second);
+    color: var(--first-color);
     cursor: pointer;
     font-family: "Tac One", sans-serif;
     font-size: 16px;
@@ -49,11 +63,12 @@ button {
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     touch-action: manipulation;
     will-change: transform;
+    border-radius: 5px;
 }
 
 button:hover {
-    color: #fff;
-    background-color: green;
+    color: var(--color-font-hover);
+    background-color: var(--bg-color-hover);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
@@ -61,24 +76,23 @@ button:hover {
 h1 {
 
     font-size: 6vw;
-
     font-family: "Tac One", sans-serif;
-    color: white;
-    text-shadow: 10px 5px 10px black;
+    color: var(--second-color);
+    text-shadow: 10px 5px 10px var(--shadow-color);
 }
 
 h2 {
 
     font-size: 2vw;
     font-family: "Tac One", sans-serif;
-    color: white;
+    color: var(--third-color);
 
 }
 
 
 ul {
     list-style-type: none;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
     padding: 30px;
     display: flex;
     align-content: center;
@@ -95,19 +109,19 @@ li {
 a {
     display: inline-flex;
     text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.6rem;
+    color: var(--link-color);
     padding: 10px;
     transition: all 0.2s ease-in-out;
     
 }
 
 a:hover {
-    color: green;
+    color: var(--color-link-hover);
 }
 
 .banner {
-    background-image: url(./img/banner.jpg);
+    background-image: url(./img/banner2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -120,29 +134,42 @@ a:hover {
     justify-content: center;
 }
 
-.container-logo {
-    width: 16vh;
-    height: 13vh;
-    margin-bottom: 10px;
-    margin-left: 10px;
+.logo {
+   font-weight: bold;
+   display: flex;
 }
 
 .container-logo img {
     width: 13vh
 }
 
+span{
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #login {
-    border: 1px solid green;
+    border: 1px solid var(--first-color);
     padding: 10px 30px;
-    color: black;
+    color: var(--third-color);
     margin: 0 20px;
     transition: all 0.5s ease-in-out;
+    border-radius: 5px;
 }
 
 #login:hover {
     color: white;
-    background-color: green;
+    background-color: var(--bg-color-hover);
+}
+
+span:hover{
+    color: var(--color-link-hover);
 }
 
 /* media queries*/
@@ -172,6 +199,7 @@ a:hover {
 
 
 /* Animaciones @keyframes */
+/* No se usaron, solo prueba */
 
 @keyframes changeColor {
     10%{

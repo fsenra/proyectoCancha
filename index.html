@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link ccs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
     <!-- favicon -->
@@ -33,24 +34,27 @@
 <body class="inconsolata">
 
     <header>
-        <nav>
-            <ul>
-                <li class="logo">
-                    <a class="logo-text" href="./index.html">
-                        <img src="./img/jugador-de-futbol.png" alt="" width="50px">
-                        <span>TU CANCHITA</span>
-                        <img src="./img/pelota-futbol.png" alt="" width="50px">
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#home">El Complejo</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#aboutUs">Sobre Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a id="login" href="#login">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="./img/jugador-de-futbol.png" alt="" width="50px">
+                    <span>TU CANCHITA</span>
+                    <img src="./img/pelota-futbol.png" alt="" width="50px">
+                </a></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="#home">El Complejo</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#aboutUs">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a id="login" href="#login">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -60,6 +64,24 @@
             <h2>Complejo deportivo</h2>
             <button>Registrate</button>
         </div>
+
+      <section class="complejo-container">
+        <h3 class="complejo_h3">El Complejo</h3>
+        <div class="complejo_img1"><img src="/proyectoCancha/img/complejo_1.jpg" alt=""></div>
+        <div class="complejo_img2"><img src="/proyectoCancha/img/complejo_2.jpg" alt=""></div>
+        <div class="complejo_img3"><img src="/proyectoCancha/img/complejo_3.jpg" alt=""></div>
+        <div class="complejo_texto"><p>
+            El complejo deportivo Tu canchita cuenta con 
+            3 canchas de futbol de cesped sintetico,
+            una cancha de futbol 9 techada, vestuarios, cantina para eventos, 
+            estacionamiento y salon de usos multiples.
+
+        </p>
+        </div>
+
+      </section>  
+
+
     </main>
 
     <footer>
@@ -67,7 +89,7 @@
         
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

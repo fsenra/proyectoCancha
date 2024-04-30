@@ -9,6 +9,7 @@
     <!-- Link ccs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./forms.css">
 
     <!-- favicon -->
     <link rel="icon" href="./img/favicon.ico">
@@ -62,7 +63,7 @@
         <div class="banner">
             <h1>TU CANCHITA</h1>
             <h2>Complejo deportivo</h2>
-            <button>Registrate</button>
+            <a href="#cd registro">  <button>Registrate</button></a>
         </div>
 
       <section class="complejo-container">
@@ -74,12 +75,34 @@
             El complejo deportivo Tu canchita cuenta con 
             3 canchas de futbol de cesped sintetico,
             una cancha de futbol 9 techada, vestuarios, cantina para eventos, 
-            estacionamiento y salon de usos multiples.
+           estacionamiento y salon de usos multiples.
 
-        </p>
-        </div>
-
+        </p></div>
       </section>  
+
+      <section >
+        <div class="container_form">
+            <h3 id="registro" class="complejo_h3">Registrate</h3>
+            <form action="" method="get" enctype="multipart/form-data" class="form_grid" id="formulario">
+                <input type="text" id="nombre" name="nombre" size="40" placeholder=" Ingrese su nombre">
+                <p id="nombreError" class="error"></p>
+                <input type="text" id="apellido" name="apellido" size="40" placeholder=" Ingrese su apellido">
+                <p id="apellidoError" class="error"></p>
+                <input type="email" name="email" id="email" placeholder="Ingrese su e-mail" required>
+                <p id="emailError" class="error"></p>
+                <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+                <p id="passError" class="error"></p>
+                <input type="password" name="pass2" id="pass2" placeholder="Repita contraseña" required>
+                <p id="passError2" class="error"></p>
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento"  placeholder="Fecha">
+                <p id="dateError" class="error"></p>
+                <input type="submit" value="Registrarme">
+            
+            </form>
+        
+
+      </section>
 
 
     </main>
@@ -89,6 +112,7 @@
         
 
     </footer>
+    <script src="/proyectoCancha/src/forms.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 

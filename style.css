@@ -261,10 +261,19 @@ span{
     list-style-type: ' ⚽ ';
 }
 
-.modal_reserva{position: absolute;
-    margin: 0 auto;
+.modal_reserva{  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-}
+    button{
+        background-color: green;
+        color: white;
+    }
+
+    }
+
 .modal_reserva::backdrop{
     background-color: rgba(0,0,0,.65);
 }

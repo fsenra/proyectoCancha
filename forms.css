@@ -11,8 +11,9 @@
     padding: 20px;
     background-color: rgb(0, 82, 4);
     max-width: 95vw;
-    margin: 0 auto;
-  
+    margin: 10px auto;
+
+    
 }
  
 .form_grid {
@@ -22,6 +23,7 @@
     width: 100%;
     max-width:500px;
     margin: 8px auto;
+    
        }
 
 

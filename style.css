@@ -143,6 +143,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -212,6 +213,55 @@ span{
     margin:0 auto;
  }
 
+ /* Estilos para el footer */
+
+ .container-footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #0C5F05;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "a b"
+    "c c";
+ }
+
+ .a{
+    grid-area: a;
+
+ }
+
+ .b{
+    grid-area: b;
+ }
+
+ .c{
+    grid-area: c;
+ }
+
+ .c p{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+ }
+
+.cont-icon-rrss{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center; 
+    align-items: center; 
+    padding: 10px 0px;
+}
+
+
+svg{
+    width: 30px;
+    margin: 0 15px;
+}
+
+ /* Fin estilos footer */
+
 #login {
     border: 1px solid var(--first-color);
     padding: 10px 30px;
@@ -268,6 +318,10 @@ span:hover{
 
     h2 {
         font-size: 5vh;
+    }
+
+    .container-footer{
+        flex-direction: column;
     }
 }
 

@@ -174,8 +174,11 @@ span{
     grid-template-rows: 1fr auto;
     padding:10px;
     row-gap: 1%;
+    
    
 }
+
+
 .complejo_img1,
 .complejo_img2,
 .complejo_img3 {
@@ -378,3 +381,4 @@ span:hover{
         background-color: darkgreen;
     }
 }
+

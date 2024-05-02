@@ -218,29 +218,30 @@ span{
  .container-footer{
     margin-top: 20px;
     padding-top: 20px;
-    background-color: #0C5F05;
+    background-color: var(--second-color);
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-areas: 
-    "a b"
-    "c c";
+    "map contacto"
+    "derechos derechos";
  }
 
- .a{
-    grid-area: a;
+ .map{
+    grid-area: map;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.4);
 
  }
 
- .b{
-    grid-area: b;
+ .contacto{
+    grid-area: contacto;
  }
 
- .c{
-    grid-area: c;
+ .derechos{
+    grid-area: derechos;
  }
 
- .c p{
+ .derechos p{
     font-size: 1.5rem;
     margin-top: 30px;
     font-weight: bold;
@@ -258,6 +259,33 @@ span{
 svg{
     width: 30px;
     margin: 0 15px;
+}
+
+.ubicacion{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.icon-ubicacion{
+    width: 20px;
+}
+
+.cont-ubicacion{
+    display: grid;
+    padding-top: 10px;
+}
+
+.newsletter{
+    width: 300px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+.newsletter-boton{
+    width: 100px;
+    height: 30px;
+    font-size: 1.5rem;
 }
 
  /* Fin estilos footer */

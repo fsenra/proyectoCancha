@@ -72,15 +72,59 @@
 
       <section class="complejo-container">
         <h3 class="complejo_h3">El Complejo</h3>
-        <div class="complejo_img1"><img src="/proyectoCancha/img/complejo_1.jpg" alt=""></div>
-        <div class="complejo_img2"><img src="/proyectoCancha/img/complejo_2.jpg" alt=""></div>
-        <div class="complejo_img3"><img src="/proyectoCancha/img/complejo_3.jpg" alt=""></div>
+        <div class="complejo_img1"><img src="/proyectoCancha/img/complejo_1.jpg" alt="Predio"></div>
+        <div class="complejo_img2"><img src="/proyectoCancha/img/complejo_2.jpg" alt="Salon"></div>
+        <div class="complejo_img3"><img src="/proyectoCancha/img/complejo_3.jpg" alt="Galpon"></div>
         <div class="complejo_texto"><p>
             El complejo deportivo Tu canchita cuenta con 
             3 canchas de futbol de cesped sintetico,
             una cancha de futbol 9 techada, vestuarios, cantina para eventos, 
            estacionamiento y salon de usos multiples.
         </p></div>
+      </section>  
+
+      <section class="servicios-container">
+        <h3 class="complejo_h3">Servicios</h3>
+        <article class="cards_servicios">
+            <h3>Cumpleaños</h3>
+            <ul>
+                <li>Utilizacion del predio por 2hs.</li>
+                <li>Utilizacion del salon.</li>            
+                <li>Profesores a cargo de la coordinacion.</li>
+                <li>Catering.</li>
+                <li>Servicio de emergencias.</li>              
+            </ul>
+            <button>Más info</button>
+        </article>
+
+        <article class="cards_servicios">
+            <h3>Reservas de canchas</h3>
+            <ul>
+                <li>Reserva de cancha por 1hs.</li>
+                <li>Canchas de 11, 7 o 5.</li>
+                <li>Cancha de 9 techada.</li>
+                <li>Vestuarios.</li>
+                <li>Servicio de Emergencia.</li>                              
+            </ul>
+            <button id="abrir_modal_reservas">Más info</button>
+            <dialog  id="modal_reservas" class="modal_reserva">
+                <h2>Debés estar registrado para reservar.</h2>
+                <button id="cerrar_modal_reservas">Cerrar</button>
+            </dialog>
+        </article>
+
+        <article class="cards_servicios">
+            <h3>Organización de torneos</h3>
+            <ul>
+                <li>Organizamos tu torneo de futbol.</li>
+                <li>Premios para 1er y 2do puesto.</li>
+                <li>Arbitros.</li>
+                <li>Vestuarios.</li>
+                <li>Servicio de Emergencia.</li>                             
+            </ul>
+            <button>Más info</button>
+        </article>
+      
       </section>  
 
       <section >
@@ -104,20 +148,7 @@
             
             </form>
         
-        <section class="complejo-container">
-            <h3 class="complejo_h3">El Complejo</h3>
-            <div class="complejo_img1"><img src="./img/complejo_1.jpg" alt=""></div>
-            <div class="complejo_img2"><img src="./img/complejo_2.jpg" alt=""></div>
-            <div class="complejo_img3"><img src="./img/complejo_3.jpg" alt=""></div>
-            <div class="complejo_texto">
-                <p>
-                    El complejo deportivo Tu canchita cuenta con
-                    3 canchas de futbol de cesped sintetico,
-                    una cancha de futbol 9 techada, vestuarios, cantina para eventos,
-                    estacionamiento y salon de usos multiples.
-
-                </p>
-            </div>
+   
 
       </section>
         </section>
@@ -173,11 +204,10 @@
 
 
     </footer>
+    <script src="/proyectoCancha/src/index.js"></script>
     <script src="/proyectoCancha/src/forms.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

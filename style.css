@@ -3,6 +3,7 @@
     --first-color: green;
     --second-color: white;
     --third-color: black;
+    --fourth-color:rgb(0, 82, 4);
     --link-color: black;
     --shadow-color: black;
     --bg-color-first: lightgray;
@@ -165,6 +166,9 @@ span{
     flex-direction: row;
     align-items: center;
 }
+
+/* Estilos para complejo */
+
 .complejo-container{
     background-color: var(--third-color);
     max-width: 95vw;
@@ -215,6 +219,58 @@ span{
     grid-column: 1 / 4;
     margin:0 auto;
  }
+ /* Fin estilos complejo */
+
+
+/* Estilos para servicios */
+
+
+
+ .servicios-container{
+    background-color: var(--third-color);
+    max-width: 95vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    padding: 10px; 
+    
+       
+}
+
+.cards_servicios {
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.cards_servicios ul {
+    justify-content: flex-start;
+    display: block;
+}
+
+.cards_servicios li {
+    color: white;
+    font-size: 18px;
+    list-style-type: ' ⚽ ';
+}
+
+.modal_reserva{position: absolute;
+    margin: 0 auto;
+
+}
+.modal_reserva::backdrop{
+    background-color: rgba(0,0,0,.65);
+}
+
+ /* Fin estilos servicios */
+
 
  /* Estilos para el footer */
 
@@ -317,7 +373,7 @@ span:hover{
 
 /* media queries*/
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     h1 {
         font-size: 6vh
     }
@@ -334,7 +390,8 @@ span:hover{
 .complejo_img1,
 .complejo_img2,
 .complejo_img3,
-.complejo_texto{
+.complejo_texto,
+.cards_servicios{
 
       
         grid-column: 1 / -1;

@@ -281,6 +281,37 @@ span{
  /* Fin estilos servicios */
 
 
+ /* Estilos Iniciar Sesion */
+ .complejo-container-sesion{
+    background-color: var(--third-color);
+    max-width: 95vw;
+    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    padding:10px;
+   
+ }
+ .complejo-sesion{
+ 
+    background-color: var(--fourth-color);
+    padding: 1rem;
+    width: 50%;
+    margin: 10px auto;
+  
+   
+ }
+
+
+ span.registrarme{
+    color: aqua;
+ }
+
+ span.registrarme:hover{
+    color: rgb(197, 120, 5);
+ }
+
+
  /* Estilos para el footer */
 
  .container-footer{

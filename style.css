@@ -196,8 +196,11 @@ h3 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .complejo-container {
 =======
+=======
+>>>>>>> 7796befcc87689e211024c262bbbf8097fd0a3b5
 /* Estilos para complejo */
 
 .complejo-container{
@@ -244,6 +247,69 @@ h3 {
     margin:0 auto;
  }
  /* Fin estilos complejo */
+<<<<<<< HEAD
+=======
+
+
+/* Estilos para servicios */
+
+
+
+ .servicios-container{
+    background-color: var(--third-color);
+    max-width: 95vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    padding: 10px; 
+    
+       
+}
+
+.cards_servicios {
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.cards_servicios ul {
+    justify-content: flex-start;
+    display: block;
+}
+
+.cards_servicios li {
+    color: white;
+    font-size: 18px;
+    list-style-type: ' ⚽ ';
+}
+
+.modal_reserva{  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button{
+        background-color: green;
+        color: white;
+    }
+
+    }
+
+.modal_reserva::backdrop{
+    background-color: rgba(0,0,0,.65);
+}
+
+ /* Fin estilos servicios */
+
+>>>>>>> 7796befcc87689e211024c262bbbf8097fd0a3b5
 
 
 /* Estilos para servicios */

@@ -10,10 +10,14 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+<<<<<<< HEAD
     background-image: url(./img/fondo-form.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+=======
+    background-color: rgb(0, 0, 0);
+>>>>>>> 7796befcc87689e211024c262bbbf8097fd0a3b5
     max-width: 95vw;
     margin: 10px auto;
 }
@@ -25,7 +29,13 @@
     width: 100%;
     max-width: 500px;
     margin: 8px auto;
+<<<<<<< HEAD
 }
+=======
+    background-color: rgb(15, 100, 29);
+    padding: 10px;
+       }
+>>>>>>> 7796befcc87689e211024c262bbbf8097fd0a3b5
 
 label {
     font-size: 16px;

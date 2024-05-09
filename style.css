@@ -1,17 +1,20 @@
 /* Declaración de variables */
-:root{
+:root {
     --first-color: green;
     --second-color: white;
     --third-color: black;
     --link-color: black;
     --shadow-color: black;
     --bg-color-first: lightgray;
-    --bg-color-second: white; 
+    --bg-color-second: white;
     --bg-color-hover: green;
     --color-font-hover: white;
     --color-link-hover: green;
 }
 
+/* Fin declaración de variables */
+
+/* Seteo por default */
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +22,12 @@
     font-size: 62.5%;
 }
 
+
 body {
     background-color: var(--bg-color-first);
 }
+
+/* Fin default */
 
 /* Font Families */
 
@@ -40,8 +46,9 @@ body {
     font-style: normal;
 }
 
-/* End Font Families's block */
+/* Fin Font Families */
 
+/* NavBar */
 
 nav {
     display: flex;
@@ -49,6 +56,68 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+ul {
+    list-style-type: none;
+    /* margin-top: 3vh; */
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+}
+
+a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--link-color);
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+#login {
+    border: 1px solid var(--first-color);
+    padding: 10px 30px;
+    color: var(--third-color);
+    margin: 0 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+#login:hover {
+    color: white;
+    background-color: var(--bg-color-hover);
+}
+
+.logo {
+    font-weight: bold;
+    display: flex;
+}
+
+span {
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+span:hover {
+    color: var(--color-link-hover);
+}
+
+/* Fin NavBar */
+
+/* Banner */
 
 button {
     border: none;
@@ -89,48 +158,6 @@ h2 {
 
 }
 
-h3{
-    font-size: 1.5vw;
-    font-family: "Tac One", sans-serif;
-    color:var(--second-color)
-}
-
-
-ul {
-    list-style-type: none;
-    /* margin-top: 3vh; */
-    padding: 30px;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-li {
-    font-size: 22px;
-    font-weight: bold;
-    align-items: center;
-}
-
-a {
-    display: inline-flex;
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: var(--link-color);
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
-    
-}
-
-a:hover {
-    color: var(--color-link-hover);
-}
-
-
-
-
-
-
 .banner {
     background-image: url(./img/banner2.jpg);
     background-repeat: no-repeat;
@@ -146,38 +173,39 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.logo {
-   font-weight: bold;
-   display: flex;
+/* Fin Banner */
+
+/* Info del complejo */
+
+h3 {
+    font-size: 1.5vw;
+    font-family: "Tac One", sans-serif;
+    color: var(--second-color)
 }
 
 .container-logo img {
     width: 13vh
 }
 
-span{
-    font-size: 2rem;
-    padding: 0 10px;
-}
 
-.logo-text{
+.logo-text {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.complejo-container{
+
+.complejo-container {
     background-color: var(--third-color);
     max-width: 95vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
-    padding:10px;
+    padding: 10px;
     row-gap: 1%;
-    
-   
-}
 
+
+}
 
 .complejo_img1,
 .complejo_img2,
@@ -185,135 +213,209 @@ span{
     margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
-    
- 
+
+
     img {
-        width: 100%; 
-        height: 100%; 
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
 
 .complejo_texto {
-    font-size: 20px  ;
+    font-size: 20px;
     color: white;
-  grid-column: 1 / 4;
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
-  text-align: center; 
-  padding: 2%;
-  min-height: 100%;
-  p{
-    font-size: 2rem;
-    font-family: "Inconsolata", monospace;
-    
-  }
- 
-}
-.complejo_h3{ 
     grid-column: 1 / 4;
-    margin:0 auto;
- }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    min-height: 100%;
 
- /* Estilos para el footer */
+    p {
+        font-size: 2rem;
+        font-family: "Inconsolata", monospace;
 
- .container-footer{
+    }
+
+}
+
+.complejo_h3 {
+    grid-column: 1 / 4;
+    margin: 0 auto;
+}
+
+/* Fin info del complejo */
+
+/* Estilos para el form de registro */
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url(./img/fondo-form.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 95vw;
+    margin: 10px auto;
+}
+
+.form_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 8px auto;
+}
+
+label {
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    grid-column: 1 / -1;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: var(--bg-color-second);
+    color: var(--first-color);
+    cursor: pointer;
+    font-family: "Tac One", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    border-radius: 4px; 
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.767);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    color: var(--color-font-hover);
+    background-color: var(--bg-color-hover);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.error {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(230, 39, 39);
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+}
+
+/* Fin estilos form de registro */
+
+/* Estilos para el footer */
+
+.container-footer {
     margin-top: 20px;
     padding-top: 20px;
     background-color: var(--second-color);
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-areas: 
-    "map contacto"
-    "derechos derechos";
- }
+    grid-template-areas:
+        "map contacto"
+        "derechos derechos";
+}
 
- .map{
+.map {
     grid-area: map;
     box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.4);
 
- }
+}
 
- .contacto{
+.contacto {
     grid-area: contacto;
- }
+}
 
- .derechos{
+.derechos {
     grid-area: derechos;
- }
+}
 
- .derechos p{
+.derechos p {
     font-size: 1.5rem;
     margin-top: 30px;
     font-weight: bold;
- }
+}
 
-.cont-icon-rrss{
+.cont-icon-rrss {
     display: grid;
     grid-auto-flow: column;
-    justify-items: center; 
-    align-items: center; 
+    justify-items: center;
+    align-items: center;
     padding: 10px 0px;
 }
 
 
-svg{
+svg {
     width: 30px;
     margin: 0 15px;
 }
 
-.ubicacion{
+.ubicacion {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.icon-ubicacion{
+.icon-ubicacion {
     width: 20px;
 }
 
-.cont-ubicacion{
+.cont-ubicacion {
     display: grid;
     padding-top: 10px;
 }
 
-.newsletter{
+.newsletter {
     width: 300px;
     height: 30px;
     font-size: 1.5rem;
 }
 
-.newsletter-boton{
+.newsletter-boton {
     width: 100px;
     height: 30px;
     font-size: 1.5rem;
 }
 
-.link-rrss{
+.link-rrss {
     padding: 0;
 }
 
- /* Fin estilos footer */
 
-#login {
-    border: 1px solid var(--first-color);
-    padding: 10px 30px;
-    color: var(--third-color);
-    margin: 0 20px;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-}
+/* Fin estilos footer */
 
-#login:hover {
-    color: white;
-    background-color: var(--bg-color-hover);
-}
 
-span:hover{
-    color: var(--color-link-hover);
-}
 
 /* media queries*/
 
@@ -326,22 +428,52 @@ span:hover{
         font-size: 4vh;
     }
 
-    h3{ font-size:2vh}
-
-
-   /* Deberia ser un slice de imagenes, por el momento lo dejamos asi.*/ 
-
-.complejo_img1,
-.complejo_img2,
-.complejo_img3,
-.complejo_texto{
-
-      
-        grid-column: 1 / -1;
-   
-     
+    h3 {
+        font-size: 2vh
     }
-}
+
+
+    /* Deberia ser un slice de imagenes, por el momento lo dejamos asi.*/
+
+    .complejo_img1,
+    .complejo_img2,
+    .complejo_img3,
+    .complejo_texto {
+
+
+        grid-column: 1 / -1;
+
+
+    }
+
+    /* Footer */
+
+   .container-footer{
+    grid-template-areas: 
+    "map"
+    "contacto"
+    "derechos"
+    ;
+    }
+
+    .map{
+        margin-bottom: 20px;
+    }
+    
+    .derechos{
+        padding: 10px;
+    }
+
+    .derechos p{
+        text-align: center;
+    }
+   }
+  
+
+   
+
+   
+
 
 
 
@@ -356,7 +488,23 @@ span:hover{
     }
 
     .container-footer{
-        flex-direction: column;
+        grid-template-areas: 
+        "map"
+        "contacto"
+        "derechos"
+        ;
+       }
+    
+    .map{
+        margin-bottom: 20px;
+    }   
+
+    .derechos{
+        padding: 15px;
+    }
+
+    .derechos p{
+        text-align: center;
     }
 }
 
@@ -365,20 +513,23 @@ span:hover{
 /* No se usaron, solo prueba */
 
 @keyframes changeColor {
-    10%{
+    10% {
         background-color: aquamarine;
     }
-    30%{
+
+    30% {
         background-color: aqua;
     }
-    50%{
+
+    50% {
         background-color: lightgreen;
     }
-    70%{
+
+    70% {
         background-color: green;
-    }    
-    100%{
+    }
+
+    100% {
         background-color: darkgreen;
     }
 }
-

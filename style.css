@@ -268,7 +268,7 @@ h3 {
     background-color: var(--third-color);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 15px;
     margin-top: 10px;
     margin-left: 15px;
@@ -528,8 +528,9 @@ svg {
     .complejo_img1,
     .complejo_img2,
     .complejo_img3,
+    .cards_servicios,
     .complejo_texto 
-    .cards_servicios{
+    {
 
 
         grid-column: 1 / -1;

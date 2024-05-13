@@ -11,3 +11,12 @@ abrirModal.addEventListener("click", ()=>{
 cerrarModal.addEventListener("click",()=>{
     modal.close()
 })
+
+// Event listeners como 'passive' para touchscreen
+abrirModal.addEventListener("touchstart", () => {
+    modal.showModal();
+}, { passive: true });
+
+cerrarModal.addEventListener("touchstart", () => {
+    modal.close();
+}, { passive: true });  

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="./forms.css"> -->
+    <link rel="stylesheet" href="./forms.css">
 
     <!-- favicon -->
     <link rel="icon" href="./img/favicon.ico">
@@ -51,11 +51,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li><a href="#complejo">El Complejo</a></li>
-                        <li><a href="#reservas">Reservas</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a id="login" href="/proyectoCancha/sesion.html">Iniciar Sesión</a></li>
+                    <li><a id="login" href="/proyectoCancha/index.html">Volver</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,100 +62,28 @@
         <div class="banner">
             <h1>TU CANCHITA</h1>
             <h2>Complejo deportivo</h2>
-            <a href="#registro">  <button>Registrate</button></a>
+           
         </div>
 
-      <section id="complejo" class="complejo-container">
-        <h3 class="complejo_h3">El Complejo</h3>
-        <div class="complejo_img1"><img src="/proyectoCancha/img/complejo_1.jpg" alt="Predio"></div>
-        <div class="complejo_img2"><img src="/proyectoCancha/img/complejo_2.jpg" alt="Salon"></div>
-        <div class="complejo_img3"><img src="/proyectoCancha/img/complejo_3.jpg" alt="Galpon"></div>
-        <div class="complejo_texto"><p>
-            El complejo deportivo Tu canchita cuenta con 
-            3 canchas de futbol de cesped sintetico,
-            una cancha de futbol 9 techada, vestuarios, cantina para eventos, 
-           estacionamiento y salon de usos multiples.
-        </p></div>
+      <section id="home" class="complejo-container-sesion">
+        <h3 class="complejo_h3">Iniciar sesíon</h3>
+
+        <section class="complejo-sesion">
+            <form action="#" method="get">
+                <input type="email" name="email_sesion" id="email_sesion" placeholder="INGRESE SU MAIL">
+                <input type="password" name="pass_sesion" id="pass_sesion" placeholder="***********">
+            </form>
+            <button>Ingresar</button> <a href="/proyectoCancha/index.html#registro"><span class="registrarme">No tengo cuenta, registrarme</span></a>
+        </section>
+        
       </section>  
 
-      <section id="servicios" class="servicios-container">
-        <h3 class="complejo_h3">Servicios</h3>
-        <article class="cards_servicios">
-            <h3>Cumpleaños</h3>
-            <ul>
-                <li>Utilizacion del predio por 2hs.</li>
-                <li>Utilizacion del salon.</li>            
-                <li>Profesores a cargo de la coordinacion.</li>
-                <li>Catering.</li>
-                <li>Servicio de emergencias.</li>              
-            </ul>
-            <button>Más info</button>
-        </article>
-
-        <article id="reservas" class="cards_servicios">
-            <h3>Reservas de canchas</h3>
-            <ul>
-                <li>Reserva de cancha por 1hs.</li>
-                <li>Canchas de 11, 7 o 5.</li>
-                <li>Cancha de 9 techada.</li>
-                <li>Vestuarios.</li>
-                <li>Servicio de Emergencia.</li>                              
-            </ul>
-            <button id="abrir_modal_reservas">Más info</button>
-            <dialog  id="modal_reservas" class="modal_reserva">
-                <h2>Debés estar registrado para reservar.</h2>
-                <button id="cerrar_modal_reservas" class="cerrar_modal">Cerrar</button>
-            </dialog>
-        </article>
-
-        <article class="cards_servicios">
-            <h3>Organización de torneos</h3>
-            <ul>
-                <li>Organizamos tu torneo de futbol.</li>
-                <li>Premios para 1er y 2do puesto.</li>
-                <li>Arbitros.</li>
-                <li>Vestuarios.</li>
-                <li>Servicio de Emergencia.</li>                             
-            </ul>
-            <button>Más info</button>
-        </article>
-      
-      </section>
-      
-     
-
-      <section >
-        <div class="container_form">
-            <h3 id="registro" class="complejo_h3">Registrate</h3>
-            <form action="" method="get" enctype="multipart/form-data" class="form_grid" id="formulario">
-                <input type="text" id="nombre" name="nombre" size="40" placeholder=" Ingrese su nombre">
-                <p id="nombreError" class="error"></p>
-                <input type="text" id="apellido" name="apellido" size="40" placeholder=" Ingrese su apellido">
-                <p id="apellidoError" class="error"></p>
-                <input type="email" name="email" id="email" placeholder="Ingrese su e-mail" required>
-                <p id="emailError" class="error"></p>
-                <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
-                <p id="passError" class="error"></p>
-                <input type="password" name="pass2" id="pass2" placeholder="Repita contraseña" required>
-                <p id="passError2" class="error"></p>
-                <label for="date">Fecha de nacimiento</label>
-                <input type="date" name="nacimiento" id="nacimiento"  placeholder="Fecha">
-                <p id="dateError" class="error"></p>
-                <input type="submit" value="Registrarme">
-            
-            </form>
-        
    
-   
-
-      </section>
-        </section>
-
 
     </main>
 
     <footer>
-        <div class="container-footer" id="footer">
+        <div class="container-footer">
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62827.63258000754!2d-66.91908765136718!3d10.202808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aef32139a9083%3A0xb08f9da0c628ab35!2sTu%20Canchita!5e0!3m2!1ses-419!2sar!4v1714606763157!5m2!1ses-419!2sar"
@@ -206,10 +130,8 @@
 
 
     </footer>
-    <script src="./src/index.js"></script>
-    <script src="./src/forms.js"></script>
+    <script src="/proyectoCancha/src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 
 </body>
 

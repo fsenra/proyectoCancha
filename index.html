@@ -55,7 +55,7 @@
                         <li><a href="#reservas">Reservas</a></li>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
-                        <li><a id="login" href="/proyectoCancha/sesion.html">Iniciar Sesión</a></li>
+                        <li><a id="login" href="./sesion.html">Iniciar Sesión</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                 <li>Vestuarios.</li>
                 <li>Servicio de Emergencia.</li>                              
             </ul>
-            <button id="abrir_modal_reservas">Más info</button>
+            <button id="abrir_modal_reservas">Reserva Acá</button>
             <dialog  id="modal_reservas" class="modal_reserva">
                 <h2>Debés estar registrado para reservar.</h2>
                 <button id="cerrar_modal_reservas" class="cerrar_modal">Cerrar</button>
@@ -142,8 +142,21 @@
                 <p id="passError" class="error"></p>
                 <input type="password" name="pass2" id="pass2" placeholder="Repita contraseña" required>
                 <p id="passError2" class="error"></p>
+                <div class="cont-check">
+                    <label for="">Indique su genero:</label>
+                    <select name="genero" id="genero" required>
+                        <option value="Masc">Masculino</option>
+                        <option value="Fem">Femenino</option>
+                        <option value="noBin">No Binario</option>
+                        <option value="noDice">Prefiero no decirlo</option>
+                    </select>
+                </div>
                 <label for="date">Fecha de nacimiento</label>
                 <input type="date" name="nacimiento" id="nacimiento"  placeholder="Fecha">
+                <div class="cont-check">
+                    <input type="checkbox" name="term-condiciones" id="TyC" value="OK" required>
+                    <label for="TyC" class="label-TyC">He leido y acepto los Términos y Condiciones</label>
+                </div>
                 <p id="dateError" class="error"></p>
                 <input type="submit" value="Registrarme">
             

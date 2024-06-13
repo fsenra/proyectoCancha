@@ -1,6 +1,6 @@
 /* Declaración de variables */
 :root {
-    --first-color: green;
+    --first-color: rgb(2, 94, 2);
     --second-color: white;
     --third-color: black;
     --link-color: black;
@@ -339,14 +339,14 @@ h3 {
  }
 
 /* Estilos para el form de registro */
-
 .container_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url(./img/fondo-form.avif);
+    background: linear-gradient(rgba(255, 255, 255, 0.199), rgba(255, 255, 255, 0.178)), 
+                url(./img/fondo-form.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -365,11 +365,14 @@ h3 {
 
 label {
     font-size: 16px;
-    color: var(--first-color);
+    color: white;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    grid-column-start: 1;
 }
+
+select { font-size: 15px;}
 
 input[type="text"],
 input[type="email"],
@@ -400,9 +403,13 @@ input[type="submit"] {
 }
 
 .cont-check{
+    font-size: 16px;
+    color: var(--first-color);
+    font-weight: bold;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
 }
+
 
 .label-TyC{
     font-size: 1.2rem;
@@ -522,7 +529,22 @@ svg {
 
 /* Fin estilos footer */
 
+/* Estilos panel administrador*/
 
+.complejo-container-admin{
+    background-color: var(--third-color);
+    max-width: 80vw;
+    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    padding:10px;
+
+    & button{
+        margin:5px
+    }
+  
+ }
 
 /* media queries*/
 

@@ -66,15 +66,35 @@
         </div>
 
       <section id="home" class="complejo-container-admin">
-        <h3 class="complejo_h3">Panel administrador</h3>
+        <h3 class="complejo_h3">Usarios Registrados</h3>
 
       
             
-        <button onclick="window.location.href='./usuarios.html'" >Ver usuarios registrados</button>
-        <button onclick="window.href='#'" >Ver Horarios de reserva</button>
-        
-      </section>  
-
+        <table class="table table-success table-striped" style="font-size: 20em;">
+            <thead>
+              <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">DNI</th>
+                <th scope="col">Acciones</th>
+                
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>34689226</td>
+                <td>
+                    <button class="btn btn-warning btn-action" onclick="">Editar</button>
+                    <button class="btn btn-danger btn-action" onclick="">Eliminar</button>
+                </td>
+              </tr>
+                    
+            </tbody>
+          </table>
    
 
     </main>
